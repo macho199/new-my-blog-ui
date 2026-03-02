@@ -15,7 +15,14 @@
   <body>
     <div class="page-wrap">
       <header class="site-header">
-        <a class="logo" href="index.html">유연한 기록</a>
+        <div class="header-top">
+          <a class="logo" href="index.html">유연한 기록</a>
+          <nav class="header-nav" aria-label="주요 메뉴">
+            <a href="#">소개</a>
+            <a href="#">아카이브</a>
+            <a href="#">연락</a>
+          </nav>
+        </div>
         <p class="tagline">기술과 일상을 천천히, 오래 남기는 블로그</p>
       </header>
 
@@ -26,11 +33,20 @@
             빠르게 넘기기보다, 오래 생각하게 되는 글을 지향합니다. 조용히 읽기 좋은
             정리글을 모아두었습니다.
           </p>
+          <div class="intro-meta">
+            <span>주 1회 발행</span>
+            <span>실무 중심 기록</span>
+            <span>짧고 선명한 정리</span>
+          </div>
         </section>
 
         <section class="post-list" aria-label="블로그 포스팅 목록">
           <article class="post-card">
-            <p class="meta">2026.03.01 · 개발문화 · 7분</p>
+            <p class="meta">
+              <span class="pill">개발문화</span>
+              <span>2026.03.01</span>
+              <span>7분</span>
+            </p>
             <h2>좋은 회고는 실패를 덜 무섭게 만든다</h2>
             <p>
               팀 회고를 ‘행사’가 아니라 ‘학습 루틴’으로 만들기 위해 시도했던 작고
@@ -40,7 +56,11 @@
           </article>
 
           <article class="post-card">
-            <p class="meta">2026.02.24 · 프론트엔드 · 6분</p>
+            <p class="meta">
+              <span class="pill">프론트엔드</span>
+              <span>2026.02.24</span>
+              <span>6분</span>
+            </p>
             <h2>복잡한 UI를 다룰 때 상태를 나누는 기준</h2>
             <p>
               전역 상태와 지역 상태를 어디서 나눌지 막막할 때, 의사결정을 도와주는
@@ -50,7 +70,11 @@
           </article>
 
           <article class="post-card">
-            <p class="meta">2026.02.18 · 글쓰기 · 5분</p>
+            <p class="meta">
+              <span class="pill">글쓰기</span>
+              <span>2026.02.18</span>
+              <span>5분</span>
+            </p>
             <h2>기술 블로그를 오래 쓰기 위한 최소 단위</h2>
             <p>
               거창한 목표보다 작은 반복이 더 중요했습니다. 주 1회 작성 루틴을
