@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유연한 기록 - UI 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true"></div>
+    <div class="container">
+      <header class="site-header">
+        <a class="logo" href="index.html">유연한 기록.</a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="#">Posts</a>
+          <a href="#">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="eyebrow">CURATED THOUGHTS</p>
+          <h1>읽기 흐름이 편한 기술 블로그</h1>
+          <p>
+            정보 밀도를 낮추고 여백을 넉넉하게 두어, 제목과 요약만 빠르게 훑을 수
+            있도록 구성했습니다.
+          </p>
+          <div class="topic-row">
+            <a class="topic active" href="#">전체</a>
+            <a class="topic" href="#">프론트엔드</a>
+            <a class="topic" href="#">회고</a>
+          </div>
+        </section>
+
+        <section class="post-grid" aria-label="포스팅 목록">
+          <article class="post-card">
+            <p class="post-meta"><span>개발문화</span><span>2026.03.02</span></p>
+            <h2><a href="post.html">문서화가 실무 속도를 올리는 진짜 이유</a></h2>
+            <p>
+              문서화가 느리다는 인식을 뒤집기 위해, 실제 팀에서 시간을 절약했던 기록
+              템플릿을 중심으로 정리했습니다.
+            </p>
+          </article>
+
+          <article class="post-card">
+            <p class="post-meta"><span>개발문화</span><span>2026.02.28</span></p>
+            <h2><a href="post.html">결정이 빨라지는 회의 메모 방식</a></h2>
+            <p>말보다 합의 흔적을 먼저 남기면 회의가 훨씬 짧아졌습니다.</p>
+          </article>
+
+          <article class="post-card">
+            <p class="post-meta"><span>Frontend</span><span>2026.02.25</span></p>
+            <h2><a href="post.html">컴포넌트 구조를 단순하게 유지하는 기준</a></h2>
+            <p>기능은 늘어나도 복잡도는 늘리지 않는 설계 체크리스트를 공유합니다.</p>
+          </article>
+
+          <article class="post-card">
+            <p class="post-meta"><span>Writing</span><span>2026.02.19</span></p>
+            <h2><a href="post.html">짧은 글이 더 잘 읽히는 문단 리듬</a></h2>
+            <p>한 문단에 한 메시지만 남기는 습관이 글 품질을 바꿨던 경험입니다.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <small>© 2026 유연한 기록</small>
+      </footer>
+    </div>
+  </body>
+</html>
