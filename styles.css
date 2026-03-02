@@ -1,0 +1,247 @@
+:root {
+  --paper: #f4f1ea;
+  --paper-deep: #ece6da;
+  --ink: #1f1d1a;
+  --muted-ink: #6a655a;
+  --line: #d8d0c0;
+  --accent: #4c5c50;
+  --card: #fbf9f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(236, 230, 218, 0.9), transparent 30%),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(236, 230, 218, 0.35) 0,
+      rgba(236, 230, 218, 0.35) 1px,
+      transparent 1px,
+      transparent 28px
+    ),
+    var(--paper);
+}
+
+.page-wrap {
+  width: min(860px, calc(100% - 2rem));
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 2.2rem 0 1.6rem;
+}
+
+.logo {
+  color: var(--ink);
+  text-decoration: none;
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.4rem 0 0;
+  color: var(--muted-ink);
+  font-size: 0.95rem;
+}
+
+.intro {
+  padding: 2.2rem 0 0.8rem;
+}
+
+.intro h1,
+.post-header h1,
+.related-posts h2,
+.post-content h2,
+.post-card h2 {
+  margin: 0;
+  font-family: "Noto Serif KR", serif;
+  letter-spacing: -0.02em;
+}
+
+.intro p {
+  margin: 0.8rem 0 0;
+  color: var(--muted-ink);
+}
+
+.post-list {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 0 3rem;
+}
+
+.post-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65), var(--card));
+  border: 1px solid var(--line);
+  padding: 1.2rem 1.2rem 1.3rem;
+  animation: reveal 0.5s ease both;
+}
+
+.post-card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.post-card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.post-card h2 {
+  margin-top: 0.2rem;
+  font-size: 1.32rem;
+}
+
+.post-card p {
+  margin: 0.5rem 0 0;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted-ink);
+}
+
+.read-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.read-link:hover,
+.read-link:focus-visible {
+  border-color: var(--accent);
+}
+
+.post-main {
+  padding: 1.8rem 0 3rem;
+}
+
+.breadcrumb {
+  margin-bottom: 1.3rem;
+}
+
+.breadcrumb a {
+  color: var(--muted-ink);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  text-decoration: underline;
+}
+
+.post-detail {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), var(--card));
+  border: 1px solid var(--line);
+  padding: 1.4rem;
+}
+
+.post-header h1 {
+  margin-top: 0.2rem;
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+.lead {
+  margin-top: 0.8rem;
+  color: #312d25;
+  font-size: 1.08rem;
+}
+
+.post-content {
+  margin-top: 1.6rem;
+}
+
+.post-content h2 {
+  font-size: 1.3rem;
+  margin-top: 1.6rem;
+}
+
+.post-content p {
+  margin-top: 0.85rem;
+}
+
+.post-content blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 1rem;
+  border-left: 3px solid var(--line);
+  color: #3f392f;
+  font-style: italic;
+  background: rgba(216, 208, 192, 0.18);
+}
+
+.post-content ul {
+  padding-left: 1.1rem;
+}
+
+.related-posts {
+  margin-top: 1.3rem;
+  padding: 1.2rem 1.2rem 1.1rem;
+  border: 1px solid var(--line);
+  background: rgba(251, 249, 244, 0.72);
+}
+
+.related-posts h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.related-posts ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.related-posts a {
+  color: var(--ink);
+}
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0 1.8rem;
+  color: var(--muted-ink);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-wrap {
+    width: min(860px, calc(100% - 1.25rem));
+  }
+
+  .site-header {
+    padding-top: 1.7rem;
+  }
+
+  .post-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .post-detail,
+  .post-card,
+  .related-posts {
+    padding: 1rem;
+  }
+}
