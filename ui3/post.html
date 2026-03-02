@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>좋은 문서는 팀 속도를 어떻게 바꾸는가</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <a class="brand" href="index.html">유연한 기록</a>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a href="#">아카이브</a>
+          <a href="#">카테고리</a>
+          <a href="#">소개</a>
+        </nav>
+      </header>
+
+      <main class="post-layout">
+        <article class="post">
+          <div class="post-topbar">
+            <a class="back-btn" href="index.html">← 목록으로 돌아가기</a>
+            <p class="path">유연한 기록 / 개발문화</p>
+          </div>
+
+          <header class="post-head">
+            <p class="meta">개발문화 · 2026.03.02 · 8분</p>
+            <h1>좋은 문서는 팀 속도를 어떻게 바꾸는가</h1>
+            <p class="lead">
+              문서는 기록을 위한 산출물이 아니라, 다음 결정을 빠르게 만들기 위한
+              기준점입니다. 핵심은 많이 쓰는 것이 아니라 다시 찾기 쉽게 쓰는 것입니다.
+            </p>
+          </header>
+
+          <section class="body">
+            <h2 id="sec-1">문서화가 느리다는 오해</h2>
+            <p>
+              문서를 쓰는 시간만 보면 분명 비용처럼 보입니다. 하지만 문서가 없을 때
+              생기는 반복 설명, 맥락 복구, 동일한 논의의 재실행 비용까지 합치면 전체
+              속도는 오히려 느려집니다.
+            </p>
+            <h3 id="sec-1-1">시간이 아니라 맥락 비용이 문제</h3>
+            <p>
+              설명을 다시 맞추는 시간은 측정하기 어렵지만, 팀의 속도를 지속적으로
+              깎아냅니다. 문서는 이 숨은 비용을 줄이는 장치입니다.
+            </p>
+            <h4 id="sec-1-1-1">반복 설명이 줄어드는 기준</h4>
+            <p>같은 질문이 두 번 나오면, 답변을 문서 구조로 승격시키는 것이 효과적입니다.</p>
+
+            <h2 id="sec-2">팀이 공유하는 최소 구조</h2>
+            <p>
+              긴 문서보다 중요한 건 일정한 형식입니다. 배경, 선택지, 결정, 후속 조치
+              네 항목만 맞춰도 읽는 사람이 핵심을 빠르게 파악할 수 있습니다.
+            </p>
+            <h3 id="sec-2-1">결정 문서 템플릿을 고정하기</h3>
+            <p>
+              작성자마다 스타일이 달라도 읽는 위치가 같으면 탐색 속도가 올라갑니다.
+              템플릿의 통일은 협업 비용을 낮춥니다.
+            </p>
+            <div class="tip">
+              <strong>Tip.</strong>
+              <p>
+                문서를 쓸 때 “3일 뒤 처음 보는 동료도 이해할 수 있는가”를 기준으로
+                문장을 한 번 더 정리해 보세요.
+              </p>
+            </div>
+
+            <h2 id="sec-3">문서는 연결될 때 가치가 커진다</h2>
+            <p>
+              문서 하나만 깔끔해도 충분하지 않습니다. 관련 이슈, PR, 회의록과 연결해
+              흐름을 보이게 해야 실제 실무에서 바로 사용됩니다.
+            </p>
+            <h3 id="sec-3-1">문서 사이의 링크를 기본값으로</h3>
+            <p>
+              관련 문서가 분리돼 있어도 링크가 촘촘하면 맥락이 단절되지 않습니다.
+              결과적으로 신규 참여자의 온보딩 속도도 빨라집니다.
+            </p>
+            <ul>
+              <li>결정 문서와 구현 PR을 양방향으로 링크하기</li>
+              <li>회의록 상단에 관련 결정 문서 고정하기</li>
+              <li>배포 후 결과를 같은 문서에 업데이트하기</li>
+            </ul>
+          </section>
+
+          <section class="related-bottom">
+            <h2>관련 글</h2>
+            <ul>
+              <li><a href="post.html">결정이 빨라지는 회의 메모 방식</a></li>
+              <li><a href="post.html">짧은 회고가 팀을 오래 가게 만드는 이유</a></li>
+            </ul>
+          </section>
+        </article>
+
+        <aside class="side">
+          <section class="card toc-tree">
+            <h2>이 글의 구조</h2>
+            <ol>
+              <li>
+                <a href="#sec-1">문서화가 느리다는 오해</a>
+                <ol>
+                  <li>
+                    <a href="#sec-1-1">시간이 아니라 맥락 비용이 문제</a>
+                    <ol>
+                      <li><a href="#sec-1-1-1">반복 설명이 줄어드는 기준</a></li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <a href="#sec-2">팀이 공유하는 최소 구조</a>
+                <ol>
+                  <li><a href="#sec-2-1">결정 문서 템플릿을 고정하기</a></li>
+                </ol>
+              </li>
+              <li>
+                <a href="#sec-3">문서는 연결될 때 가치가 커진다</a>
+                <ol>
+                  <li><a href="#sec-3-1">문서 사이의 링크를 기본값으로</a></li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="foot">
+        <small>© 2026 유연한 기록</small>
+      </footer>
+    </div>
+  </body>
+</html>
