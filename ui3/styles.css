@@ -252,8 +252,31 @@ body {
 
 .path {
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   color: #8a91a2;
   font-size: 0.8rem;
+}
+
+.path a {
+  color: #707a90;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.path a:hover {
+  color: #454e62;
+  border-bottom-color: #aeb5c5;
+}
+
+.path span {
+  color: #9ba3b4;
+}
+
+.path span[aria-current="page"] {
+  color: #616b80;
+  font-weight: 600;
 }
 
 .post-head h1 {
@@ -487,5 +510,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .path {
+    flex-wrap: wrap;
   }
 }
